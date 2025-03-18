@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color: #333;
+    --bg-color: #fff;
+    --section-padding: 100px 0;
+    --transition: all 0.3s ease;
+}
+
+[data-bs-theme="dark"] {
+    --text-color: #fff;
+    --bg-color: #121212;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    transition: var(--transition);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 180px 0 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1531297484001-80022131f5a1');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+.section-padding {
+    padding: var(--section-padding);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Skills */
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-progress {
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    transition: width 1s ease-in-out;
+}
+
+/* Projects */
+.project-filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    margin-bottom: 30px;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+    background: var(--bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-image {
+        margin-top: 40px;
+    }
+    
+    .project-filters .btn {
+        margin-bottom: 10px;
+    }
+}
